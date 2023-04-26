@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script src="/data/BenchmarkData.js"></script>
+<script src="/ui/Me/js/TrackerDataProvider.js"></script>
+<script src="/ui/Me/js/Trackers.js"></script>
+<script src="/ui/Me/js/TrackerOptions.js"></script>
+<script src="/ui/Me/js/Me.js"></script>
+<link rel="stylesheet" href="/ui/Me/css/Me.css" />
+</head>
+<body>
+<div class="hnfMe fragment">
+<div class="platformMainContent zoom" id="MePanorama" data-win-control="CommonJS.Immersive.Panorama"
+data-win-bind="winControl.title: title; 
+winControl.panoramaState: panoramaState;
+winControl.clusterDataSource: clusterDataSource; 
+winControl.headerOptions: pageHeaderOptions;
+winControl.semanticZoomRenderer: semanticZoomRenderer"
+aria-label="Main Content" role="main">
+</div>
+<div id="hnfAddNewItemFlyout" data-win-control="WinJS.UI.Flyout" class="hnfFlyout hnfTrackerAddFlyout"></div>
+<div id="hnfManageTrackerFlyout" data-win-control="WinJS.UI.Flyout" class="hnfFlyout hnfManageTrackerFlyout"></div>
+<div class="platformActionBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement: 'bottom', layout: 'custom'}">
+<div class="bottomEdgy right platformFeedbackButtonParent">
+<button id="helpButton" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon: '\uFF60', extraClass: 'appexSymbol'}"></button>
+</div>
+</div>
+</div>
+</body>
+</html>
